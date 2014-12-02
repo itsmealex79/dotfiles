@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# TODO: check node itself
+# Use latest available version of npm before anything else
+npm install -g npm@latest
 
-npm update -g
+# Install my preferred local packages
+npm install -g bower david grunt-cli jshint livereloadx node-static
 
-npm install n -g
-npm install jshint -g
-npm install gh -g
-npm install grunt-cli -g
-npm install plato -g
-npm install serve -g
-npm install trash -g
+# Update all global using david
+david update -g
