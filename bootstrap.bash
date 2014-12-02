@@ -21,19 +21,19 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "apply-settings.fish" --exclude "*.md" --exclude "*.txt" -av . ~
+  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "*.md" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doSync
+  doSync
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-	echo
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doSync
+  read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    doSync
   else
     printf "Aborted.\n\n"
     exit 0
-	fi
+  fi
 fi
 unset doSync
 
@@ -54,13 +54,4 @@ if [[ $? -ne 0 ]]; then
   printf "\nSee instructions above for making fish the default shell.\n"
 else
   printf "ok.\n\n"
-fi
-
-printf "# Setting up/refreshing fish settings (i.e. universal variables)... "
-fish apply-settings.fish
-if [[ $? -ne 0 ]]; then
-  printf "\nError: applying fish settings failed.\n\n"
-  exit 1
-else
-  printf "done.\n\n"
 fi

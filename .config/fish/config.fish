@@ -1,14 +1,11 @@
-# Homebrew
-set -x PATH ""(brew --prefix)"/bin" $PATH
+set -x PATH "$HOME/bin" $PATH
+set -x EDITOR "subl -w"
+set -x LANG "en_US"
+set -x LC_ALL "en_US.UTF-8"
+set -x GREP_OPTIONS "--color=auto"
+set -x HOMEBREW_CASK_OPTS "--appdir=/Applications"
+set -x NODE_ENV "development"
 
-# use latest Ruby + Gems
-set -x PATH "/usr/local/Cellar/ruby/2.0.0-p0/bin" "/usr/local/opt/ruby/bin" $PATH
+set -U fish_greeting ""
 
-# node (default)
-set -x NODE_PATH "/usr/local/lib/node" "/usr/local/lib/node_modules" $NODE_PATH
-
-# node (current version, via n)
-n 0.10.33
-
-# expose PATH to graphical apps
 launchctl setenv PATH $PATH
