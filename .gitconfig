@@ -4,8 +4,8 @@
 	# checkout
 	co = checkout
 	# checkout usual branches
-  master = checkout master
-  develop = checkout develop
+	master = checkout master
+	develop = checkout develop
 	# checkout branch, creating it if necessary
 	go = checkout -B
 	# commit
