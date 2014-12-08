@@ -1,3 +1,3 @@
 function dot
-  cd ~/Projects/dotfiles
+  cd ~/projects/dotfiles
 end

@@ -1,3 +1,3 @@
 function legacy
-  cd ~/Projects/legacy
+  cd ~/projects/legacy
 end

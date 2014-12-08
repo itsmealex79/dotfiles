@@ -9,7 +9,7 @@ brew upgrade
 brew install ruby
 brew install python
 brew install node
-brew install go
+#brew install go
 brew install fish
 brew install trash
 
