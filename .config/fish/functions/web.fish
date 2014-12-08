@@ -1,3 +1,3 @@
 function web
-  cd ~/Projects/web
+  cd ~/projects/web
 end

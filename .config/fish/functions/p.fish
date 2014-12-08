@@ -1,3 +1,3 @@
 function p
-  cd ~/Projects
+  cd ~/projects
 end

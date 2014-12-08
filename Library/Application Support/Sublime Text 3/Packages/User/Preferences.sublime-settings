@@ -4,13 +4,13 @@
 // Settings may also be placed in file type specific options files, for
 // example, in Packages/Python/Python.sublime-settings for python files.
 {
-    "color_scheme": "Packages/User/Capo-Dark (SL).tmTheme",
+    "color_scheme": "Packages/User/Monokai (SL).tmTheme",
 
     // Note that the font_face and font_size are overridden in the platform
     // specific settings file, for example, "Preferences (Linux).sublime-settings".
     // Because of this, setting them here will have no effect: you must set them
     // in your User File Preferences.
-    "font_face": "Source Code Pro",
+    "font_face": "",
     "font_size": 14,
 
     // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
